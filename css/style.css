@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.cmn-heading {
+    position: relative;
+    display: inline-block;
+}
+
+.cmn-heading h3 {
+    font-family: var(--ff3);
+    font-size: 36px;
+    color: var(--primary-color);
+    padding-bottom: 40px;
+}
+
+.cmn-heading img {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+
+:root {
+    --primary-color: #cc9900;
+    --second-color: #c89f2d;
+    --w: #fff;
+    --ff1: 'Lato', sans-serif;
+    --ff2: 'Gentium Book Basic', serif;
+    --ff3: 'Yeseva One', cursive;
+    --ff4: 'Open Sans', sans-serif;
+}
+
+/* --------------------------------------------
+                Common CSS End 
+---------------------------------------------*/
+
+
+
+/* --------------------------------------------
+                Header Part Start 
+---------------------------------------------*/
+#menu {
+    padding: 12px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.menu_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo {
+    flex-basis: 25%;
+}
+
+.main_menu {
+    flex-basis: 75%;
+    line-height: 92px;
+}
+
+.main_menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+}
+
+.main_menu ul li {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.main_menu ul li a {
+    font-size: 21px;
+    color: white;
+    font-family: var(--ff2);
+    font-weight: 700;
+    position: relative;
+}
+
+.main_menu ul li a::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: -12px;
+    width: 100%;
+    height: 4px;
+    background: #c6c4ba;
+    transform: scalex(0);
+    -webkit-transform: scalex(0);
+    -moz-transform: scalex(0);
+    -ms-transform: scalex(0);
+    -o-transform: scalex(0);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.main_menu ul li a:hover::after {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
+
+
+/* --------------------------------------------
+                Header Part End 
+---------------------------------------------*/
+
+/* --------------------------------------------
+                Banner Part Start 
+---------------------------------------------*/
+#banner {
+    padding: 220px 0 142px;
+}
+
+.banner_text {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.banner_text h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 90px;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 32px;
+}
+
+.baner_logo img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.banner_text a {
+    padding: 20px 50px;
+    background: rgb(0, 0, 0, 0.6);
+    border: 1px solid black;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 34px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.banner_text a:hover {
+    background: rgb(255, 255, 255, 0.6);
+    border-color: rgb(255, 255, 255, 0.6);
+}
+
+/* --------------------------------------------
+                Banner Part End 
+---------------------------------------------*/
+
+/* --------------------------------------------
+                Right Part Start 
+---------------------------------------------*/
+#right {
+    padding: 100px 0 0;
+}
+
+.right_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.right_col {
+    max-width: 46.6%;
+}
+
+.right_col h2 {
+    font-size: 36px;
+    color: var(--primary-color);
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    padding-bottom: 13px;
+}
+
+.right_col p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4c4c4c;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding-top: 26px;
+    padding-bottom: 50px;
+}
+
+.rf_img {
+    padding-left: 73px;
+}
+
+
+.dish_col {
+    max-width: 54%;
+    padding-bottom: 50px;
+}
+
+.dish_col img {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* --------------------------------------------
+                Right Part End 
+---------------------------------------------*/
+
+
+/* --------------------------------------------
+                Indg Part Start 
+---------------------------------------------*/
+#indg {
+    padding: 100px 0 100px;
+    position: relative;
+}
+
+.indg-content {
+    /* position: absolute; */
+    padding: 0 62px;
+    max-width: 570px;
+    max-height: 557px;
+    background: rgba(0, 0, 0, 0.67);
+    margin-left: auto;
+}
+
+.indg-text {
+    padding: 76px 0 67px;
+}
+
+.indg-text h3 {
+    color: var(--w);
+}
+
+.indg-text p {
+    padding-top: 24px;
+    font-family: var(--ff1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--w);
+}
+
+.indg-img ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 78px;
+}
+
+.indg-img ul li {
+    border: 5px solid rgba(255, 255, 255, 0.09);
+    border-radius: 50%;
+}
+
+
+/* --------------------------------------------
+                Indg Part End 
+---------------------------------------------*/
+
+
+/* --------------------------------------------
+                item Part Start 
+---------------------------------------------*/
+#item_section {
+    padding: 100px 0 92px;
+}
+
+.item_row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 108px;
+}
+
+.item_col {
+    flex-basis:435px;
+}
+
+.item_part:nth-child(2n+1) {
+    margin-bottom: 60px;
+}
+
+.item_price ul {
+    display: inline-block;
+    width: 100%;
+}
+
+.item_price ul li p {
+    font-family: var(--ff1);
+    font-size: 16px;
+    color: #4c4c4c;
+    line-height: 24px;
+    padding-top: 9px;
+    text-align: left;
+}
+
+.item_price ul ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #c89f2d;
+}
+
+.item_price ul ul li {
+    padding: 30px 0 8px;
+    font-family: var(--ff3);
+    font-size: 21px;
+    color: var(--second-color);
+    line-height: 24px;
+}
+
+/* --------------------------------------------
+                item Part End 
+---------------------------------------------*/  
+    
+    
+/* --------------------------------------------
+                Review Part Start 
+---------------------------------------------*/
+#review{
+    padding: 100px 0;
+    background: url(../images/banner2.jpg) no-repeat center/cover;
+}
+.rv_content {
+    max-width: 770px;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
+    padding: 75px 65px 87px;
+}
+.rv_content h3{
+    color: var(--w);
+}
+.rv_content p span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 96px;
+    line-height: 45px;
+    color: #f4f4f4;
+    position: absolute;
+    left: -43px;
+    opacity: 0.47;
+    top: 32px;
+}
+.rv_content p {
+    font-family: var(--ff2);
+    font-size: 25px;
+    font-weight: 700;
+    color: #dde0df;
+    line-height: 45px;
+    position: relative;
+    padding: 22px 5px 0;
+}
+.rv_content pre {
+    font-family: var(--ff1);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--w);
+    line-height: 45px;
+    padding-top: 21px;
+}
+/* --------------------------------------------
+                Review Part End 
+---------------------------------------------*/
+/* --------------------------------------------
+                Food order Part Start 
+---------------------------------------------*/
+   #order_wrapper{
+       padding: 100px 0;
+       
+    } 
+    .food_odr_row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+    .food_odr_col{
+        flex-basis: 50%;
+    }
+    .food_odr_col:first-child{
+        padding-right: 16px;
+    }
+    .food_odr_col:last-child{
+        padding: 0 77px;
+    }
+    .food_odr_col ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    .odr_cnt p{
+        padding-top: 26px;
+        font-family: var(--ff1);
+        font-weight: 400;
+        font-size: 16px;
+        color: #4c4c4c;
+        line-height: 24px;
+    }
+    .odr_cnt p span{
+        display: block;
+        padding-top: 10px;
+    }
+    .odr_form {
+        padding-top: 37px;
+    }
+    .odr_form td:nth-child(2n+1){
+        padding-right: 25px;
+    }
+    .odr_form label{
+        color: #c9a131;
+        font-family: var(--ff4);
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .odr_form input, .odr_form select{
+        width: 200px;
+        padding: 8px 10px;
+        border: 1px solid #c8c6c6;
+        margin-top: 5px;
+        margin-bottom:22px;
+    }
+    .odr_form select{
+        padding: 3px 10px;
+    }
+    .odr_form input:focus{
+        border: 1px solid #c9a131;
+    }
+    .odr_form input::placeholder, .odr_form select{
+        font-family: var(--ff4);
+        font-style: italic;
+        font-size: 16px;
+        color: #7c7c7c;
+    }
+    .odr_form td.icon{
+        position: relative;
+    }
+    .odr_form td i{
+        position: absolute;
+        content: '';
+        top: 32px;
+        right: 35px;
+        z-index: 99;
+        color: #7c7c7c;
+    }
+    .odr_form button{
+    width: 200px;
+    padding: 10px;
+    background: #c9a131;
+    border: none;
+    color: var(--w);
+    font-family: var(--ff4);
+    font-size: 16px;
+    }
+/* --------------------------------------------
+                Food order Part End 
+---------------------------------------------*/
+/* --------------------------------------------
+                Footer Part Start 
+---------------------------------------------*/
+#footer_section{
+    background: #191919;
+    padding: 60px 0;
+}
+.foot_row{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+.foot_col h3{
+ color: var(--w);
+ font-size: 21px;
+ line-height: 24px;
+ text-transform: capitalize;
+}
+.foot_col:first-child{
+ max-width: 370px;
+ margin-right: 121px;
+}
+.foot_col:nth-child(2){
+ margin-right: 200px;
+}
+.foot_col p{
+    font-family: var(--ff4);
+    font-weight: 400;
+    color: var(--w);
+    line-height: 24px;
+    font-size: 16px;
+}
+.foot_col p:first-of-type{
+    padding-top: 18px;
+}
+.foot_col p span{
+    font-weight: 700;
+}
+.foot_col .pyment{
+    padding-top: 46px;
+}
+.foot_col .socile_icon ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 46px;
+}
+.foot_col .socile_icon ul li {
+    margin-right: 10px;
+    display: inline-block;
+}
+.foot_col .socile_icon ul li a{
+    color: var(--w);
+    font-size: 16px;
+    line-height: 24px;
+    transition: all linear 0.3s;
+}
+.foot_col .socile_icon ul li a:hover{
+    transform: scale(1.1);
+}
+
+/* --------------------------------------------
+                Footer Part End 
+---------------------------------------------*/
+/* --------------------------------------------
+                Footer Part Start 
+---------------------------------------------*/
+
+/* --------------------------------------------
+                Footer Part End 
+---------------------------------------------*/
